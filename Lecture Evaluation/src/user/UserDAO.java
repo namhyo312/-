@@ -28,13 +28,13 @@ public class UserDAO {
 
 		try {
 
-			String dbURL = "jdbc:mysql://localhost:3306/LectureEvaluation";
+			String dbURL = "jdbc:mysql://localhost:3306/LectureEvaluation?&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 
 			String dbID = "root";
 
-			String dbPassword = "root1234";
+			String dbPassword = "1234";
 
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 
