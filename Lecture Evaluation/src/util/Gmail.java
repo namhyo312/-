@@ -33,4 +33,5 @@ public class Gmail extends Authenticator {
  * public PasswordAuthentication getPasswordAuthentication() {
  * 
  * return pa;
+ // 서버 주소 587 변경 후 시도하고 다시 465돌리기
  */
