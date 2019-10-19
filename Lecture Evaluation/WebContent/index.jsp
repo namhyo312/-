@@ -1,3 +1,4 @@
+<%@page import="user.UserDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.io.PrintWriter"%>
 <%@ page import="user.UserDAO"%>
@@ -57,7 +58,7 @@
 		script.println("</script>");
 		script.close();	
 	}
-
+   
 /* 	boolean emailChecked = new UserDAO().getUserEmailChecked(userID);
 
 	if(emailChecked == false) {
@@ -102,7 +103,7 @@
 <%
 	} else {
 %>
-              <a class="dropdown-item" href="userLogout.jsp">로그아웃</a>
+              <a class="dropdown-item" href="userLogout.jsp"><b><%=userID%></b>님 로그아웃</a>
 <%
 	}
 %>
